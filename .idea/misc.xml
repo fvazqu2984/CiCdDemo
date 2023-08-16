@@ -4,6 +4,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/solved/hello-circle/pom.xml" />
+        <option value="$PROJECT_DIR$/hello-circle/pom.xml" />
       </list>
     </option>
   </component>
