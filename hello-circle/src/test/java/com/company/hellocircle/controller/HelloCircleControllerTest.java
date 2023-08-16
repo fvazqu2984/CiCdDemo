@@ -15,6 +15,16 @@ public class HelloCircleControllerTest {
     @Autowired
     private MockMvc mockMvc;
 
+    @Test
+    public void shouldReturnHello() throws Exception {
+        // arrange and act
+        mockMvc.perform(get("/hello"))
+                .andDo(print())
+                .andExpect(status().isOk())
+
+                // assert
+                .andExpect(content().string("Hello, Circle!"));
+    }
 
     @Test
     public void shouldReturnAnswer() throws Exception {
